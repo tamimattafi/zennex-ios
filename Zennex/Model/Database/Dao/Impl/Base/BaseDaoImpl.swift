@@ -20,28 +20,32 @@ class BaseDaoImpl<T : Object>: BaseDao {
         self.realm = realm
     }
     
-    func get(with id: Int64) -> T? {
-        return realm.objects(T.self).filter("id == \(id)").first
+    func get(by id: Int64) -> T? {
+        realm.objects(T.self).filter("id == \(id)").first
     }
     
-    func getFiltring(by filter: String) -> Results<T> {
-        return realm.objects(T.self).filter(filter)
+    func getFiltering(by filter: String) -> Results<T> {
+        realm.objects(T.self).filter(filter)
     }
     
-    func getOrdering(by property: String, ascendingly: Bool) -> Results<T> {
-        return realm.objects(T.self).sorted(byKeyPath: property, ascending: ascendingly)
+    func getOrdering(by property: String, ascending: Bool) -> Results<T> {
+        realm.objects(T.self).sorted(byKeyPath: property, ascending: ascending)
     }
     
     func insert(item: T) -> Bool {
-        return ( try? realm.write { realm.add(item) } ) != nil
+        ( try? realm.write { realm.add(item) } ) != nil
     }
     
     func delete(item: T) -> Bool {
-        return ( try? realm.write { realm.delete(item) } ) != nil
+        ( try? realm.write { realm.delete(item) } ) != nil
     }
     
     func update(item: T) -> Bool {
-        return ( try? realm.write { realm.add(item, update: .modified) } ) != nil
+        ( try? realm.write { realm.add(item, update: .modified) } ) != nil
+    }
+    
+    func release() {
+        realm.cancelWrite()
     }
     
 }

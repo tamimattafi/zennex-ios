@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		426AF459242118E4002B90AE /* EmployerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426AF458242118E4002B90AE /* EmployerRepository.swift */; };
+		426AF45C24211960002B90AE /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426AF45B24211960002B90AE /* DataSource.swift */; };
 		457A88AC241FE0C40034717B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457A88AB241FE0C40034717B /* AppDelegate.swift */; };
 		457A88AE241FE0C40034717B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457A88AD241FE0C40034717B /* SceneDelegate.swift */; };
 		457A88B0241FE0C40034717B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457A88AF241FE0C40034717B /* FirstViewController.swift */; };
@@ -31,6 +33,9 @@
 		459DFFCE24209B69004B7A2A /* BookkeeperDaoImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459DFFCD24209B69004B7A2A /* BookkeeperDaoImpl.swift */; };
 		7F27474148A65D2FD9299FFD /* Pods_ZennexTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E8373525B404FB88B3D901A /* Pods_ZennexTests.framework */; };
 		9E38D19369BF8D317F491E55 /* Pods_Zennex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44CFDED5C17436DFEF24831 /* Pods_Zennex.framework */; };
+		E853545EE8857E4FDB904739 /* Notifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8535039A03B40197A3E4D2E /* Notifier.swift */; };
+		E85359B4B182896AF0162A93 /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8535F70864FCC95D9091300 /* BaseRepository.swift */; };
+		E8535D0F1875D7A8BB36C3D2 /* CallBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85359322C1B483844EDA93C /* CallBack.swift */; };
 		F0C5A225A7C15E9EA9EF23C9 /* Pods_Zennex_ZennexUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926854F52A0FED1957A2218F /* Pods_Zennex_ZennexUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +57,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		426AF458242118E4002B90AE /* EmployerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployerRepository.swift; sourceTree = "<group>"; };
+		426AF45B24211960002B90AE /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		457A88A8241FE0C40034717B /* Zennex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zennex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		457A88AB241FE0C40034717B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		457A88AD241FE0C40034717B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +95,9 @@
 		9814552DC40F93FC2FE2BE87 /* Pods-ZennexTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZennexTests.debug.xcconfig"; path = "Target Support Files/Pods-ZennexTests/Pods-ZennexTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B78902B6220E2AE43C4356BC /* Pods-Zennex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zennex.release.xcconfig"; path = "Target Support Files/Pods-Zennex/Pods-Zennex.release.xcconfig"; sourceTree = "<group>"; };
 		C44CFDED5C17436DFEF24831 /* Pods_Zennex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zennex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8535039A03B40197A3E4D2E /* Notifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifier.swift; sourceTree = "<group>"; };
+		E85359322C1B483844EDA93C /* CallBack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallBack.swift; sourceTree = "<group>"; };
+		E8535F70864FCC95D9091300 /* BaseRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
 		F3F3F624A0A53D3BD0503126 /* Pods-Zennex-ZennexUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zennex-ZennexUITests.release.xcconfig"; path = "Target Support Files/Pods-Zennex-ZennexUITests/Pods-Zennex-ZennexUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,6 +152,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		426AF45A24211950002B90AE /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				426AF45B24211960002B90AE /* DataSource.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		457A889F241FE0C40034717B = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +194,7 @@
 				457A88B6241FE0C60034717B /* Assets.xcassets */,
 				457A88B8241FE0C60034717B /* LaunchScreen.storyboard */,
 				457A88BB241FE0C60034717B /* Info.plist */,
+				E853543F3064AB3957C61AD2 /* Global */,
 			);
 			path = Zennex;
 			sourceTree = "<group>";
@@ -201,25 +220,26 @@
 		457A88DD241FE2910034717B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				426AF45A24211950002B90AE /* Base */,
 				459DFFB024208A13004B7A2A /* Database */,
 				459DFFAF242089FF004B7A2A /* Entities */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		459DFFAD242089CF004B7A2A /* base */ = {
+		459DFFAD242089CF004B7A2A /* Base */ = {
 			isa = PBXGroup;
 			children = (
 				457A88DE241FE2A70034717B /* Worker.swift */,
 				459DFFA724208779004B7A2A /* SimpleWorker.swift */,
 			);
-			path = base;
+			path = Base;
 			sourceTree = "<group>";
 		};
 		459DFFAF242089FF004B7A2A /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				459DFFAD242089CF004B7A2A /* base */,
+				459DFFAD242089CF004B7A2A /* Base */,
 				459DFFA52420868A004B7A2A /* Employer.swift */,
 				459DFFA92420880B004B7A2A /* Leader.swift */,
 				459DFFAB242088C1004B7A2A /* Bookkeeper.swift */,
@@ -248,6 +268,8 @@
 		459DFFB224208A4D004B7A2A /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				E853564387A24DF051A13285 /* Base */,
+				426AF458242118E4002B90AE /* EmployerRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -286,6 +308,31 @@
 			isa = PBXGroup;
 			children = (
 				459DFFC624209435004B7A2A /* BaseDaoImpl.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		E8535388D3CDE72ADD99B1C3 /* CallBack */ = {
+			isa = PBXGroup;
+			children = (
+				E85359322C1B483844EDA93C /* CallBack.swift */,
+				E8535039A03B40197A3E4D2E /* Notifier.swift */,
+			);
+			path = CallBack;
+			sourceTree = "<group>";
+		};
+		E853543F3064AB3957C61AD2 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				E8535388D3CDE72ADD99B1C3 /* CallBack */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		E853564387A24DF051A13285 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E8535F70864FCC95D9091300 /* BaseRepository.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -535,6 +582,7 @@
 				459DFFAC242088C1004B7A2A /* Bookkeeper.swift in Sources */,
 				459DFFBB24208F40004B7A2A /* LeaderDao.swift in Sources */,
 				459DFFB924208B4E004B7A2A /* BaseDao.swift in Sources */,
+				426AF459242118E4002B90AE /* EmployerRepository.swift in Sources */,
 				459DFFC924209AF5004B7A2A /* EmployerDaoImpl.swift in Sources */,
 				459DFFB624208AA0004B7A2A /* EmployerDao.swift in Sources */,
 				457A88B0241FE0C40034717B /* FirstViewController.swift in Sources */,
@@ -546,6 +594,10 @@
 				457A88AE241FE0C40034717B /* SceneDelegate.swift in Sources */,
 				459DFFCE24209B69004B7A2A /* BookkeeperDaoImpl.swift in Sources */,
 				459DFFC724209435004B7A2A /* BaseDaoImpl.swift in Sources */,
+				E85359B4B182896AF0162A93 /* BaseRepository.swift in Sources */,
+				E8535D0F1875D7A8BB36C3D2 /* CallBack.swift in Sources */,
+				426AF45C24211960002B90AE /* DataSource.swift in Sources */,
+				E853545EE8857E4FDB904739 /* Notifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

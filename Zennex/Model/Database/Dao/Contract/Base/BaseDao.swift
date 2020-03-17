@@ -11,11 +11,11 @@ import Foundation
 import Realm
 import RealmSwift
 
-protocol BaseDao {
-    associatedtype T : Object;
-    func getFiltring(by filter: String) -> Results<T>
-    func getOrdering(by property: String, ascendingly: Bool) -> Results<T>
-    func get(with id: Int64) -> T?
+protocol BaseDao : DataSource {
+    associatedtype T : Object
+    func getFiltering(by filter: String) -> Results<T>
+    func getOrdering(by property: String, ascending: Bool) -> Results<T>
+    func get(by id: Int64) -> T?
     func insert(item: T) -> Bool
     func delete(item: T) -> Bool
     func update(item: T) -> Bool

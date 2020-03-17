@@ -1,22 +1,14 @@
 //
-//  BaseRepository.swift
-//  Zennex
-//
-//  Created by Zennex on 17/03/2020.
-//  Copyright © 2020 tamimattafi. All rights reserved.
+// Created by Zennex2 on 17/03/2020.
+// Copyright (c) 2020 tamimattafi. All rights reserved.
 //
 
 import Foundation
+import Realm
+import RealmSwift
 
-class BaseRepository<T> {
-        
-    private let dao: BaseDao
+class BaseRepository<T: Object> {
     
-    init(dao: BaseDao) {
-        self.dao = dao
-    }
     
-    func loadData(sorting ascendingly: Bool) -> [T] {
-        return dao.getAll(using: "")
-    }
+    
 }

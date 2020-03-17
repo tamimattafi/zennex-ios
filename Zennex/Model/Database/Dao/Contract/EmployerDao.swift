@@ -8,8 +8,6 @@
 
 import Foundation
 
-import Realm
-import RealmSwift
 
 protocol EmployerDao : BaseDao where T == Employer {
     
