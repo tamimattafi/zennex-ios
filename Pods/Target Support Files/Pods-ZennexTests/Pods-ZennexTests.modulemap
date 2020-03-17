@@ -1,0 +1,6 @@
+framework module Pods_ZennexTests {
+  umbrella header "Pods-ZennexTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
